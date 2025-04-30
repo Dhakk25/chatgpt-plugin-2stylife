@@ -24,15 +24,15 @@ def serve_openapi():
 @app.route("/products", methods=["GET"])
 def products():
     return jsonify([
-        {"name": "Túi Tote", "link": "https://2stylife.com/totebag/"},
-        {"name": "Túi Đeo Chéo", "link": "https://2stylife.com/deocheo/"},
-        {"name": "Clutch Bag", "link": "https://2stylife.com/clutch/"},
-        {"name": "Balo", "link": "https://2stylife.com/balo/"},
-        {"name": "Túi Công Sở", "link": "https://2stylife.com/TuiCongSo2nd/"},
-        {"name": "Túi Du Lịch", "link": "https://2stylife.com/2ndtravelbag/"},
-        {"name": "Áo Các Loại", "link": "https://2stylife.com/2ndaocacloai/"},
+        {"name": "Túi Tote", "link": "https://2stylife.com/totebag/?orderby=date"},
+        {"name": "Túi Đeo Chéo", "link": "https://2stylife.com/deocheo/?orderby=date"},
+        {"name": "Clutch Bag", "link": "https://2stylife.com/clutch/?orderby=date"},
+        {"name": "Balo", "link": "https://2stylife.com/balo/?orderby=date"},
+        {"name": "Túi Công Sở", "link": "https://2stylife.com/tuicongso2nd/?orderby=date"},
+        {"name": "Túi Du Lịch", "link": "https://2stylife.com/2ndtravelbag/?orderby=date"},
+        {"name": "Áo Các Loại", "link": "https://2stylife.com/2ndaocacloai/?orderby=date"},
         {"name": "Túi & Phụ Kiện Khác", "link": "https://2stylife.com/ortheritems/"},
-        {"name": "Ví da", "link": "https://2stylife.com/wallet/"}
+        {"name": "Ví da", "link": "https://2stylife.com/wallet/?orderby=date/"}
     ])
 
 # Bài viết Instagram
