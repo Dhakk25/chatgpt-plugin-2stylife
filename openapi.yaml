@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: 2styLife Shopping Plugin
-  description: Truy xuất sản phẩm mới nhất từ WooCommerce và các bài viết từ Instagram, Facebook.
+  description: Plugin trả về sản phẩm còn hàng mới nhất từ WooCommerce và bài viết từ mạng xã hội.
   version: '1.0.0'
 servers:
   - url: https://chatgpt-plugin-2stylife.onrender.com
@@ -10,10 +10,10 @@ paths:
   /products:
     get:
       operationId: getProducts
-      summary: Lấy danh sách sản phẩm từ WooCommerce
+      summary: Lấy sản phẩm còn hàng mới nhất từ WooCommerce
       responses:
         "200":
-          description: Danh sách sản phẩm mới nhất
+          description: Danh sách sản phẩm mới còn hàng
           content:
             application/json:
               schema:
