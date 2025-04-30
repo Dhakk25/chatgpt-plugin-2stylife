@@ -1,18 +1,18 @@
 {
   "schema_version": "v1",
-  "name_for_human": "LifeStyle.TheSecond Assistant",
-  "name_for_model": "lifestyle_assistant",
-  "description_for_human": "Tìm sản phẩm túi xách second-hand Nhật, Ý, Mỹ trên 2stylife.com và cập nhật từ Instagram/Facebook của LifeStyle.TheSecond.",
-  "description_for_model": "Plugin giúp trả lời về các sản phẩm secondhand cao cấp, bài đăng Instagram và thông tin từ website https://2stylife.com.",
+  "name_for_human": "2Stylife Assistant",
+  "name_for_model": "2stylife_plugin",
+  "description_for_human": "Trợ lý tư vấn túi xách & sản phẩm của 2Stylife.",
+  "description_for_model": "Plugin trả về các sản phẩm, bài đăng Instagram và Facebook từ 2Stylife.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://2stylife.com/openapi.yaml"
+    "url": "https://chatgpt-plugin-2stylife.onrender.com/openapi.yaml",
+    "is_user_authenticated": false
   },
-  "logo_url": "https://2stylife.com/logo.png",
+  "logo_url": "https://2stylife.com/wp-content/uploads/2025/01/307450449_496327939167764_3799827829268927333_n.png",
   "contact_zalo": "0962090388",
-  "legal_info_url": "https://2stylife.com/"
-}
-
+  "legal_info_url": "https://2stylife.com"
+  }
