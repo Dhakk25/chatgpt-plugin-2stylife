@@ -1,26 +1,61 @@
+---
+# ✅ openapi.yaml (YAML format)
 openapi: 3.0.1
 info:
-  title: LifeStyle.TheSecond API
-  description: API trả về sản phẩm, link Instagram và bài viết mới từ website https://2stylife.com.
-  version: '1.0'
+  title: 2StyLife Plugin API
+  description: Plugin tích hợp các sản phẩm, bài đăng Instagram/Facebook từ 2StyLife.
+  version: '1.0.0'
+servers:
+  - url: https://your-domain.onrender.com
 paths:
   /products:
     get:
-      summary: Lấy danh sách sản phẩm secondhand
+      summary: Lấy danh sách các sản phẩm nổi bật
       responses:
         '200':
-          description: Thành công – danh sách sản phẩm
-
+          description: Danh sách sản phẩm
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    link:
+                      type: string
   /instagram-posts:
     get:
-      summary: Lấy bài viết mới nhất từ Instagram @lifestyle.thesecond
+      summary: Lấy bài đăng mới từ Instagram
       responses:
         '200':
-          description: Thành công – danh sách bài viết
-
+          description: Danh sách bài đăng Instagram
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    caption:
+                      type: string
+                    link:
+                      type: string
   /facebook-posts:
     get:
-      summary: Lấy bài đăng gần nhất từ Facebook Page LifeStyle.TheSecond
+      summary: Lấy bài đăng mới từ Facebook
       responses:
         '200':
-          description: Thành công – danh sách post
+          description: Danh sách bài đăng Facebook
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    link:
+                      type: string
