@@ -1,1 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "LifeStyle.TheSecond Assistant",
+  "name_for_model": "lifestyle_assistant",
+  "description_for_human": "Tìm sản phẩm túi xách second-hand Nhật, Ý, Mỹ trên 2stylife.com và cập nhật từ Instagram/Facebook của LifeStyle.TheSecond.",
+  "description_for_model": "Plugin giúp trả lời về các sản phẩm secondhand cao cấp, bài đăng Instagram và thông tin từ website https://2stylife.com.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://2stylife.com/openapi.yaml"
+  },
+  "logo_url": "https://2stylife.com/logo.png",
+  "contact_zalo": "0962090388",
+  "legal_info_url": "https://2stylife.com/"
+}
 
