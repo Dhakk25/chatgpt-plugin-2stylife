@@ -1,18 +1,18 @@
----
-# ✅ openapi.yaml (YAML format)
-openapi: 3.0.1
+openapi: 3.1.0
 info:
-  title: 2StyLife Plugin API
-  description: Plugin tích hợp các sản phẩm, bài đăng Instagram/Facebook từ 2StyLife.
+  title: Plugin 2styLife
+  description: Plugin kết nối sản phẩm & bài viết Instagram, Facebook từ 2styLife
   version: '1.0.0'
 servers:
-  - url: https://your-domain.onrender.com
+  - url: https://chatgpt-plugin-2stylife.onrender.com
+
 paths:
   /products:
     get:
-      summary: Lấy danh sách các sản phẩm nổi bật
+      operationId: getProducts
+      summary: Lấy danh sách sản phẩm
       responses:
-        '200':
+        "200":
           description: Danh sách sản phẩm
           content:
             application/json:
@@ -25,12 +25,14 @@ paths:
                       type: string
                     link:
                       type: string
+
   /instagram-posts:
     get:
-      summary: Lấy bài đăng mới từ Instagram
+      operationId: getInstagramPosts
+      summary: Lấy bài viết Instagram
       responses:
-        '200':
-          description: Danh sách bài đăng Instagram
+        "200":
+          description: Danh sách bài Instagram
           content:
             application/json:
               schema:
@@ -42,11 +44,13 @@ paths:
                       type: string
                     link:
                       type: string
+
   /facebook-posts:
     get:
+      operationId: getFacebookPosts
       summary: Lấy bài đăng mới từ Facebook
       responses:
-        '200':
+        "200":
           description: Danh sách bài đăng Facebook
           content:
             application/json:
