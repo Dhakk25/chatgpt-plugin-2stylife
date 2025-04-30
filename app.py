@@ -1,7 +1,17 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify send_from_directory
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
+@app.route("/.well-known/ai-plugin.json")
+def serve_manifest():
+    return send_from_directory(".well-known", "ai-plugin.json")
+
+@app.route("/openapi.yaml")
+def serve_openapi():
+    return send_from_directory(".", "openapi.yaml")
+    
 @app.route("/products")
 def products():
     return jsonify([
