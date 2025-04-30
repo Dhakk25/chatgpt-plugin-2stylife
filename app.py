@@ -27,6 +27,7 @@ def products():
         {"name": "Túi Tote", "link": "https://2stylife.com/totebag/"},
         {"name": "Túi Đeo Chéo", "link": "https://2stylife.com/deocheo/"},
         {"name": "Clutch Bag", "link": "https://2stylife.com/clutch/"},
+        {"name": "Balo", "link": "https://2stylife.com/balo/"},
         {"name": "Túi Công Sở", "link": "https://2stylife.com/briefcasebag/"},
         {"name": "Túi Du Lịch", "link": "https://2stylife.com/2ndtravelbag/"},
         {"name": "Áo Các Loại", "link": "https://2stylife.com/2ndaocacloai/"},
