@@ -34,7 +34,7 @@ def products():
         response = requests.get(
             WC_API_URL,
             auth=HTTPBasicAuth(WC_CONSUMER_KEY, WC_CONSUMER_SECRET),
-            params={"per_page": 10, "orderby": "date"}
+            params={"per_page": 10, "orderby": "date", "stock_status": "instock"}
         )
         response.raise_for_status()
         data = response.json()
