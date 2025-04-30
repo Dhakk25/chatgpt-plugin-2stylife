@@ -24,9 +24,13 @@ def serve_openapi():
 @app.route("/products", methods=["GET"])
 def products():
     return jsonify([
-        {"name": "Túi Tote", "link": "https://2stylife.com/tote-bag/"},
-        {"name": "Túi đeo chéo", "link": "https://2stylife.com/tui-deo-cheo-cac-loai/"},
-        {"name": "Túi cầm tay", "link": "https://2stylife.com/clutch-pouch/"},
+        {"name": "Túi Tote", "link": "https://2stylife.com/totebag/"},
+        {"name": "Túi Đeo Chéo", "link": "https://2stylife.com/deocheo/"},
+        {"name": "Clutch Bag", "link": "https://2stylife.com/clutch/"},
+        {"name": "Túi Công Sở", "link": "https://2stylife.com/briefcasebag/"},
+        {"name": "Túi Du Lịch", "link": "https://2stylife.com/2ndtravelbag/"},
+        {"name": "Áo Các Loại", "link": "https://2stylife.com/2ndaocacloai/"},
+        {"name": "Túi & Phụ Kiện Khác", "link": "https://2stylife.com/ortheritems/"},
         {"name": "Ví da", "link": "https://2stylife.com/wallet/"}
     ])
 
