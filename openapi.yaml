@@ -1,0 +1,26 @@
+openapi: 3.0.1
+info:
+  title: LifeStyle.TheSecond API
+  description: API trả về sản phẩm, link Instagram và bài viết mới từ website https://2stylife.com.
+  version: '1.0'
+paths:
+  /products:
+    get:
+      summary: Lấy danh sách sản phẩm secondhand
+      responses:
+        '200':
+          description: Thành công – danh sách sản phẩm
+
+  /instagram-posts:
+    get:
+      summary: Lấy bài viết mới nhất từ Instagram @lifestyle.thesecond
+      responses:
+        '200':
+          description: Thành công – danh sách bài viết
+
+  /facebook-posts:
+    get:
+      summary: Lấy bài đăng gần nhất từ Facebook Page LifeStyle.TheSecond
+      responses:
+        '200':
+          description: Thành công – danh sách post
